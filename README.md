@@ -4,9 +4,9 @@
 
 This repo is meant to demonstrate how [Fluree's NodeJS library](https://docs.flur.ee/tools/1.0.0/nodejs/nodejs-examples) can be used as a data-event-driven sidecar to a Fluree ledger.
 
-Because Fluree's database engine (e.g. queries/reads) is decoupled from its ledger engine (e.g. transactions/writes), database peers are enabled by a data-eventing architecture where the ledger pushes relevant index data or block-event data to subscribed peers. This enables those services to operate as either (a) ephemeral, horizontally-scalable, fully-functional database servers or (b) event-driven machine services to execute whatever arbitrary logic fits your use case.
+Because Fluree's **database engine** (e.g. queries/reads) is decoupled from its **ledger engine** (e.g. transactions/writes), database peers are enabled by a data-eventing architecture where the ledger pushes relevant index data or block-event data to subscribed peers. This enables those services to operate as either (a) **ephemeral, horizontally-scalable, fully-functional database servers** or (b) **event-driven machine services** to execute whatever arbitrary logic fits your use case.
 
-This repo demonstrates capability (b) described above, and we will...
+This repo demonstrates capability **(b)** described above, and we will...
 
 1. Use the [Fluree's NodeJS library](https://docs.flur.ee/tools/1.0.0/nodejs/nodejs-examples) to subscribe/connect a db peer to a ledger
 2. Receive data event updates from that ledger for each new block committed
